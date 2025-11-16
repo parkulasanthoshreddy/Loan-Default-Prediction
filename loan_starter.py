@@ -16,7 +16,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.impute import SimpleImputer
 from imblearn.pipeline import Pipeline as ImbPipeline
-# from imblearn.over_sampling import SMOTE  # enable if needed
+
 
 # ----- PATHS -----
 PROJECT_DIR = Path(r"C:\Users\Santhosh\OneDrive\Desktop\projects\Loan Default Prediction")
@@ -33,7 +33,7 @@ except UnicodeDecodeError:
 # ----- TARGET DETECTION -----
 cols_lower = {c.lower(): c for c in df.columns}
 
-# ✅ Explicitly handle "Credit Default"
+# Explicitly handle "Credit Default"
 if "credit default" in cols_lower:
     target_col = cols_lower["credit default"]
 
@@ -48,7 +48,7 @@ elif "loan_status" in cols_lower:
     )
     target_col = "__target__"
 else:
-    raise SystemExit("❌ Could not find target. Add a 'default' (0/1) column or a 'loan_status' text column.")
+    raise SystemExit("Could not find target. Add a 'default' (0/1) column or a 'loan_status' text column.")
 
 # X / y
 y = df[target_col].astype(int)
@@ -82,8 +82,7 @@ pre = ColumnTransformer(
     remainder="drop"
 )
 
-# (Optional) imbalance handling - enable SMOTE by uncommenting lines
-# smote = SMOTE(random_state=42)
+# (Optional) 
 
 models = {
     "logreg": ImbPipeline([
@@ -191,4 +190,4 @@ try:
 except Exception as e:
     print("Note: could not export feature names/coefs:", e)
 
-print("✅ Done. See outputs folder:", OUT_DIR.resolve())
+print(" Done. See outputs folder:", OUT_DIR.resolve())
