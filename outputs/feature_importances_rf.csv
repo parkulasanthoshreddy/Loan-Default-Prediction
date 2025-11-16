@@ -1,0 +1,45 @@
+feature,importance
+Credit Score,0.14992045219535455
+Current Loan Amount,0.14076739381546907
+Maximum Open Credit,0.08648837269228266
+Annual Income,0.0855702992203846
+Monthly Debt,0.08450230252409265
+Current Credit Balance,0.08223623063209025
+Years of Credit History,0.08023355298768055
+Number of Open Accounts,0.058264118298002696
+Months since last delinquent,0.049768597977752405
+Term_Short Term,0.018252797324427097
+Term_Long Term,0.017838066120077996
+Years in current job_10+ years,0.011143242554322974
+Number of Credit Problems,0.010057152599537123
+Purpose_debt consolidation,0.008740883827317896
+Home Ownership_Home Mortgage,0.00847672116246307
+Home Ownership_Rent,0.00824034368263181
+Years in current job_2 years,0.007559061001423547
+Bankruptcies,0.007304719678834859
+Years in current job_< 1 year,0.007112918240457993
+Years in current job_3 years,0.006974485515747218
+Years in current job_5 years,0.006754748993339146
+Purpose_other,0.006175489560132492
+Years in current job_1 year,0.006131761953270314
+Years in current job_4 years,0.006023649345360018
+Years in current job_6 years,0.0059149640555058065
+Years in current job_8 years,0.005592622723308214
+Home Ownership_Own Home,0.005408605973300837
+Years in current job_7 years,0.005200547635746154
+Years in current job_9 years,0.0047065323085563856
+Purpose_home improvements,0.004093272927201738
+Purpose_business loan,0.0033293974934267756
+Tax Liens,0.002781756046527814
+Purpose_medical bills,0.002292021377011972
+Purpose_buy a car,0.0018327100548020487
+Purpose_major purchase,0.0009409630959498372
+Purpose_take a trip,0.0007648888750032799
+Purpose_buy house,0.000680257038490551
+Purpose_small business,0.0006209418777765667
+Purpose_vacation,0.0003852972347650965
+Purpose_wedding,0.00032447100967693634
+Purpose_moving,0.00018414230193391793
+Home Ownership_Have Mortgage,0.00014476275596356756
+Purpose_educational expenses,0.00014312196481750504
+Purpose_renewable energy,0.00012136134778211962
