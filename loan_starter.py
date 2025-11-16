@@ -18,19 +18,19 @@ from sklearn.impute import SimpleImputer
 from imblearn.pipeline import Pipeline as ImbPipeline
 
 
-# ----- PATHS -----
+# PATHS 
 PROJECT_DIR = Path(r"C:\Users\Santhosh\OneDrive\Desktop\projects\Loan Default Prediction")
 DATA_FILE   = PROJECT_DIR / r"dataset\loan.csv"
 OUT_DIR     = PROJECT_DIR / "outputs"
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 
-# ----- READ DATA (robust encoding) -----
+# READ DATA
 try:
     df = pd.read_csv(DATA_FILE, encoding="utf-8-sig")
 except UnicodeDecodeError:
     df = pd.read_csv(DATA_FILE, encoding="latin1")
 
-# ----- TARGET DETECTION -----
+#  TARGET DETECTION 
 cols_lower = {c.lower(): c for c in df.columns}
 
 # Explicitly handle "Credit Default"
@@ -191,3 +191,4 @@ except Exception as e:
     print("Note: could not export feature names/coefs:", e)
 
 print(" Done. See outputs folder:", OUT_DIR.resolve())
+
